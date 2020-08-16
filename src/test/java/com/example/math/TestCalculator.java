@@ -3,6 +3,8 @@ package com.example.math;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
+import java.util.Calendar;
+
 public class TestCalculator {
 
     @Test
@@ -15,6 +17,12 @@ public class TestCalculator {
     public void subtract() {
         Calculator calculator = new Calculator();
         assertEquals(2, calculator.subtract(8, 6));
+    }
+
+    @Test
+    public void multiply() {
+        Calculator calculator = new Calculator();
+        assertEquals(4,  calculator.mulitply(2 * 2));
     }
 
 }
